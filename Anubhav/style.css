@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+.marquee-container h1{
+    color:#FEFEFF;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 5rem;
+    font-weight:500;
+    white-space: nowrap;
+    padding:0;
+    letter-spacing:1.5px;
+    animation: move-rtl 7000ms linear infinite;
+
+}
+img{
+    margin-left:1.5rem;
+    margin-right:1.5rem;
+    height: 53px;
+    vertical-align: middle;
+}
+@keyframes move-rtl{
+    0%{
+        transform:translate(0);
+    }
+    100%{
+        transform:translate(-100%);
+    }
+}
+.marquee-container{
+    display:flex;
+    justify-content:center;
+    background:#F76A07;
+    align-items: center;
+    padding:10px;
+    overflow:hidden;
+    gap:1rem;
+    border-top:4px solid #FEFEFF;
+    border-bottom:4px solid #FEFEFF;
+}
+/*Rules-Section*/
+.rules-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:80px;
+    gap:3rem;
+    column-gap: 20rem;
+    overflow:hidden;
+}
+.rules-container h1{
+    margin: left 42px;
+    font-size:4rem;
+    color:#FEFEFF;
+    font-family:'Clash Display',sans-serif;
+    font-weight:600;
+    letter-spacing: 2px;
+}
+.select-container{
+    align-self:center;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    width:700px;
+    overflow: hidden;
+    border-radius: 25px;
+    border:2px solid #F76A07;
+}
+.radio__input{
+    display: none;
+}
+.radio__label{
+    margin:0;
+    text-align: center;
+    flex-grow:2;
+    height:40px;
+    vertical-align:bottom;
+    font-size:30px;
+    font-family: 'Clash Display',sans-serif;
+    color:#FEFEFF;
+    background-color:#000000 ;
+    cursor:pointer;
+    transition:background-color 0.01s;
+}
+
+.radio__input:checked + .radio__label{
+    background:#F76A07;
+}
+.radio__input:not(:checked) + .radio__label{
+    background: #000000;
+    color:#F76A07;
+}
