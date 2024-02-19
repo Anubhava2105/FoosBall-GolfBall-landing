@@ -87,8 +87,7 @@ img{
     cursor:pointer;
     transition:background-color 0.01s;
 }
-
-.radio__input:checked + .radio__label{
+.radio__input:checked+ .radio__label{
     background:#F76A07;
 }
 .radio__input:not(:checked) + .radio__label{
