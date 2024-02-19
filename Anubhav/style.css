@@ -51,7 +51,6 @@ img{
     margin:80px;
     gap:3rem;
     column-gap: 20rem;
-    overflow:hidden;
 }
 .rules-container h1{
     margin: left 42px;
@@ -66,10 +65,10 @@ img{
     display:flex;
     align-items: center;
     justify-content:center;
-    width:700px;
+    width:500px;
     overflow: hidden;
     border-radius: 25px;
-    border:2px solid #F76A07;
+    border:4px solid #F76A07;
 }
 .radio__input{
     display: none;
@@ -79,6 +78,7 @@ img{
     text-align: center;
     flex-grow:2;
     height:40px;
+    width:450px;
     vertical-align:bottom;
     font-size:30px;
     font-family: 'Clash Display',sans-serif;
@@ -94,4 +94,53 @@ img{
 .radio__input:not(:checked) + .radio__label{
     background: #000000;
     color:#F76A07;
+}
+/*the rules*/
+.numbered-container{
+    display:flex;
+    min-height:500px;
+    background:#000000;
+    justify-content: center;
+    align-items:center;
+    overflow:visible;
+    flex-wrap: wrap;
+    gap:3rem;
+    
+}
+.container-1 p,.container-2 p,.container-3 p{
+    margin-top:20px;
+    padding:15px;
+    font-family: 'Clash Display',sans-serif;
+    font-size:1rem;
+    text-align: justify;
+    text-justify:inter-word;
+    color:#FEFEFF;
+}
+.container-1,.container-2,.container-3{
+    display:flex;
+    flex-direction: column;
+    height:400px;
+    width:320px;
+    flex-wrap: wrap;
+    position:relative;
+    border:6px solid #F76A07;
+    border-radius:20px;
+}
+.circle-1,.circle-2,.circle-3{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#F76A07;
+    height: 46px;
+    width:46px;
+    border-radius:50px;
+    position:relative;
+    border:4px solid #000000;
+    margin-top:-25px;
+    margin-left:133px;
+}
+.circle-1 h1,.circle-2 h1,.circle-3 h1{
+    font-size: 30px;
+    font-weight:600;
+    font-family: 'Clash Display', sans-serif;
 }

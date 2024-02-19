@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rules Section</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,300&display=swap" rel="stylesheet">
-
+    
 <body>
     <section id="rules-section">
         <div class="marquee-container">
@@ -17,17 +18,30 @@
             <h1>Foosball Golfball <img src="star.png" alt="star"></h1>
             <h1>Foosball Golfball <img src="star.png" alt="star"></h1>
         </div>
-        <br>
         <div class="rules-container">
             <h1>Rules</h1>
             <div class="select-container">
-                <input class="radio__input" type="radio" name="myRadio" value="Foosball" id="myRadio1"/>
+                <input onclick="change_back()" class="radio__input" type="radio" name="myRadio" value="Foosball" id="myRadio1"/>
                 <label class="radio__label" for="myRadio1">Foosball</label>
-                <input class="radio__input" type="radio" name="myRadio" value="Golfball" id="myRadio2"/>
+                <input onclick="change_text()" class="radio__input" type="radio" name="myRadio" value="Golfball" id="myRadio2"/>
                 <label class="radio__label" for="myRadio2">Golfball</label>
+            </div>
+            <div class="numbered-container">
+                <div class="container-1"><div class="circle-1">
+                    <h1>1</h1>
+                </div><p id="p-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis, cupiditate, cum tenetur error eum expedita facere perspiciatis quia ut et eius rem quae assumenda quos dolorum consequuntur qui soluta.
+                Labore, molestiae non. Nam voluptas quidem saepe quia aperiam dolorem iure adipisci provident perspiciatis ducimus, consequuntur sed facere in dolores officia dolore ut quas numquam necessitatibus exercitationem voluptatum odit alias.</p></div>
+                <div class="container-2"><div class="circle-2">
+                    <h1>2</h1></div><p id="p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nam laudantium quidem exercitationem error, maxime, beatae ea reprehenderit in, molestias ipsa. Ex, harum reprehenderit! Esse perferendis harum ratione. Quasi, libero?
+                    Qui necessitatibus, vel magnam itaque animi nihil. Animi rerum, veniam unde aut fugiat temporibus eum nemo suscipit ducimus nihil ipsum magni iusto autem corporis voluptatibus ex, dignissimos veritatis
+                    </p></div>
+                <div class="container-3"><div class="circle-3">
+                    <h1>3</h1>
+                </div><p id="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo obcaecati perspiciatis in nesciunt officiis ipsa itaque. Odit, maiores, ad eaque minus blanditiis in labore aut explicabo dicta quam, harum iusto.
+                Possimus pariatur magni quam perferendis quibusdam eius quis, placeat laudantium aut id, cupiditate fuga debitis modi consequatur error mollitia vitae veniam ducimus? Magni voluptatum mollitia labore veniam.</p></div>
             </div>
         </div>
     </section>
+    <script src="app.js"></script>
 </body>
-
 </html>
